@@ -47,7 +47,7 @@ export const authUser = async (req, res, next) => {
         id: userId ? userId.id : user.id,
         pseudo: user.pseudo,
         role: user.role,
-        token: generateToken(user.id)
+        token: generateToken(user.id, user.role)
       });
     } else {
       res.status(401).json({
