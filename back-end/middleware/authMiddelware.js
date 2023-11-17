@@ -9,6 +9,7 @@ const protect = async (req, res, next) => {
   if (token && type === "Bearer") {
     try {
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      if(decoded.type !== 'admin') return  res.status(401).json({ success: false, message: "Not Authorized" });
       req.user = await prisma.user.findUnique({
         select: {
           id: true,

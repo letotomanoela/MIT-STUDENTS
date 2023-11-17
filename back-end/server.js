@@ -10,12 +10,14 @@ import Stats from "./routes/Stats.js";
 import errorHandler from "./middleware/error.js";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 dotenv.config({ path: ".env" });
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+app.use(cors())
 app.use(cookieParser())
 const __dirname = path.resolve();
 app.use(
