@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Logo from "../Logo/Logo";
 import { useQuery } from "react-query";
 import { useSelector } from "react-redux";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { v4 as uuidv4 } from "uuid";
+
+import Logo from "../../../public/ist.png";
 
 const calculerMoyenne = (notes, semestre) => {
   const filteredNotes = notes.filter((note) => note.semestre === semestre);
@@ -66,7 +67,7 @@ const TemplatePDF = ({ id }) => {
         <div className="flex">
           <div className="w-[30%] h-max py-2 flex items-center space-x-2">
             <div className="w-12 h-12 text-center">
-              <img src="./ist.png" className="w-12" alt="" />
+              <img src={Logo} className="w-12" alt="" />
             </div>
             <div>
               <p className="text-xl">

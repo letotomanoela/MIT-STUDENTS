@@ -68,7 +68,7 @@ export default function Sidebar() {
           }   mt-8 flex justify-between items-center`}
         >
           <div className="font-bold text-xl flex items-center space-x-2">
-            <img src="./ist.png" className="w-12" alt="" />
+            <img src={"../ist.png"} className="w-12" alt="" />
 
             {size === "full" && (
               <AnimatePresence>
