@@ -15,8 +15,8 @@ import { useSelector } from "react-redux";
 const Login = () => {
   document.title = "Se connecter";
   const signIn = useSignIn();
-  const authUser = useAuthUser()
-  
+  const authUser = useAuthUser();
+
   const { token } = useSelector((state) => ({
     ...state.AuthReducer,
   }));
@@ -111,7 +111,7 @@ const Login = () => {
         } else {
           dispatch({
             type: "LOG_IN",
-            payload: json.token
+            payload: json.token,
           });
 
           signIn({
@@ -145,7 +145,7 @@ const Login = () => {
         >
           <div className="flex  justify-center h-full flex-col px-12 ">
             <div className="w-max mx-auto mb-3">
-              <Logo />
+              <img src="./ist.png" className="w-12" alt="" />
             </div>
             <h1 className="text-3xl font-bold mb-10 text-center ">
               Connecter vous à votre compte

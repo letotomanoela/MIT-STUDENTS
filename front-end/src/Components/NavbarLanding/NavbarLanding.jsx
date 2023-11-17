@@ -4,11 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { dropIn } from "../animation";
 import { Link } from "react-router-dom";
 
+
 const NavbarLanding = () => {
   return (
     <nav className="w-full h-16 bg-slate-50 flex justify-between px-6">
       <div className="h-full flex items-center text-2xl font-bold space-x-2">
-        <Logo />
+        <img src="./ist.png" className="w-12" alt="" />
         <AnimatePresence>
           <motion.div
             key={1}
@@ -18,7 +19,7 @@ const NavbarLanding = () => {
             variants={dropIn}
             className="text-3xl"
           >
-            MIT
+            IST
           </motion.div>
         </AnimatePresence>
       </div>

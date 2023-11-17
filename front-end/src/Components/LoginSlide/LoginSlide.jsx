@@ -37,7 +37,8 @@ const LoginSlide = ({ img, text, description, changeContent }) => {
         <AnimatePresence>
           <div className="h-[40%] bg-slate-900 mt-2 px-10 py-4">
             <div className="w-max flex items-center space-x-2">
-              <Logo />
+              <img src="./ist.png" className="w-12" alt="" />
+
               <AnimatePresence>
                 <motion.div
                   key={1}
@@ -47,7 +48,7 @@ const LoginSlide = ({ img, text, description, changeContent }) => {
                   variants={dropIn}
                   className="text-3xl font-bold text-white"
                 >
-                  MIT
+                  IST
                 </motion.div>
               </AnimatePresence>
             </div>

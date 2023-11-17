@@ -66,17 +66,17 @@ const TemplatePDF = ({ id }) => {
         <div className="flex">
           <div className="w-[30%] h-max py-2 flex items-center space-x-2">
             <div className="w-12 h-12 text-center">
-              <Logo />
+              <img src="./ist.png" className="w-12" alt="" />
             </div>
             <div>
               <p className="text-xl">
-                <span className="font-bold">M</span>assachusetts
+                <span className="font-bold">I</span>nstitut
               </p>
               <p className="text-xl">
-                <span className="font-bold">I</span>nstitute of
+                <span className="font-bold">S</span>upérieur de
               </p>
               <p className="text-xl">
-                <span className="font-bold">T</span>echnology
+                <span className="font-bold">T</span>echnologie
               </p>
             </div>
           </div>
@@ -265,9 +265,9 @@ function SemestreItemSkeleton({}) {
 
 function useGetQuery({ id, asc }) {
   const getEtudiant = async () => {
-    return await fetch(
-      `/api/note/etudiant/${id}/asc/${asc}`
-    ).then((res) => res.json());
+    return await fetch(`/api/note/etudiant/${id}/asc/${asc}`).then((res) =>
+      res.json()
+    );
   };
   return useQuery(["releve", id], getEtudiant, {
     onSuccess: (data) => {
