@@ -8,8 +8,9 @@ import ColorBtn from "./ColorBtn";
 import { Link, redirect, useNavigate } from "react-router-dom";
 import { data } from "./data";
 import { container, item, dropIn } from "../animation";
-import Logo from "../Logo/Logo";
 import { useSignOut, useAuthUser } from "react-auth-kit";
+
+import Logo from "./ist.png"
 
 export default function Sidebar() {
   const signOut = useSignOut();
@@ -68,7 +69,7 @@ export default function Sidebar() {
           }   mt-8 flex justify-between items-center`}
         >
           <div className="font-bold text-xl flex items-center space-x-2">
-            <img src={"../ist.png"} className="w-12" alt="" />
+            <img src={Logo} className="w-12" alt="" />
 
             {size === "full" && (
               <AnimatePresence>
