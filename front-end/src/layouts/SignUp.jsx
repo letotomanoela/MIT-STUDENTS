@@ -240,7 +240,7 @@ const SignUp = () => {
             </h1>
             {showSuccess && <SuccessAlert />}
 
-            <form action="" onSubmit={(e) => e.preventDefault()}>
+            <form action="" onSubIST={(e) => e.preventDefault()}>
               <div>
                 <label htmlFor="pseudo">
                   Entrer votre numero d'inscription

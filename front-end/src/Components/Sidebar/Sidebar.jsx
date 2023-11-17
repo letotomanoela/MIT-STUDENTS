@@ -79,7 +79,7 @@ export default function Sidebar() {
                   variants={dropIn}
                   className="text-3xl"
                 >
-                  MIT
+                  IST
                 </motion.div>
               </AnimatePresence>
             )}

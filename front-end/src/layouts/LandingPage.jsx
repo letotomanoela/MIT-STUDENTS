@@ -20,7 +20,7 @@ const sectionData = [
     color: "primary",
 
     content:
-      "Le MIT est mondialement reconnu pour son excellence dans l'enseignement et la recherche. En choisissant notre plateforme de gestion des notes, vous bénéficiez d'un système qui correspond aux plus hauts standards académiques.",
+      "Le IST est mondialement reconnu pour son excellence dans l'enseignement et la recherche. En choisissant notre plateforme de gestion des notes, vous bénéficiez d'un système qui correspond aux plus hauts standards académiques.",
   },
   {
     icon: <TbCertificate />,
@@ -48,7 +48,7 @@ const sectionData = [
     color: "danger",
     title: "Personnalisation",
     content:
-      "Notre système de gestion des notes peut être adapté aux besoins spécifiques du MIT. Nous offrons des fonctionnalités personnalisables pour répondre aux exigences académiques uniques de votre institution.",
+      "Notre système de gestion des notes peut être adapté aux besoins spécifiques du IST. Nous offrons des fonctionnalités personnalisables pour répondre aux exigences académiques uniques de votre institution.",
   },
   {
     icon: <GiDiploma />,
@@ -60,7 +60,7 @@ const sectionData = [
 ];
 
 const LandingPage = () => {
-  document.title = "MIT";
+  document.title = "IST";
   const { token } = useSelector((state) => ({
     ...state.AuthReducer,
   }));
@@ -81,7 +81,7 @@ const LandingPage = () => {
             transition={{ type: "spring", damping: 80, stiffness: 300 }}
             className="text-5xl f font-bold"
           >
-            Bienvenue sur le site du MIT (Massachusetts Institute of Technology)
+            Bienvenue sur le site du IST (Institut Supérieur de Technologie)
           </motion.p>
           <motion.p
             initial={{ translateX: -300 }}
@@ -89,7 +89,7 @@ const LandingPage = () => {
             transition={{ type: "spring", damping: 80, stiffness: 300 }}
             className="mt-5"
           >
-            Au MIT, nous sommes dévoués à la gestion attentive des étudiants et
+            Au IST, nous sommes dévoués à la gestion attentive des étudiants et
             de leurs notes, en veillant à leur progression académique. Grâce à
             notre système intégré, nous assurons transparence, équité et soutien
             optimal pour favoriser leur réussite.
@@ -205,7 +205,7 @@ function Section2({}) {
           <p className="text-gray-500">
             En choisissant notre plateforme de gestion des notes, vous optez
             pour une solution fiable, efficace et adaptée aux exigences
-            académiques du MIT. Rejoignez-nous dès aujourd'hui et profitez des
+            académiques du IST. Rejoignez-nous dès aujourd'hui et profitez des
             avantages de notre système de gestion des notes pour une expérience
             académique optimisée.
           </p>
@@ -292,41 +292,41 @@ function StudentSays() {
       image: "landing.jpg",
       position: "top-[10%] ",
       name: "Jane Doe",
-      text: "Le site de gestion de notes au MIT est extrêmement convivial et intuitif. Il facilite grandement le suivi de mes résultats académiques et me permet de rester organisé.",
+      text: "Le site de gestion de notes au IST est extrêmement convivial et intuitif. Il facilite grandement le suivi de mes résultats académiques et me permet de rester organisé.",
     },
     {
       size: "w-24 h-24",
       image: "landing1.jpg",
       position: "top-1/3 left-[15%]",
       name: "John Doe",
-      text: "J'apprécie particulièrement la fonctionnalité du site de gestion de notes au MIT qui me permet de comparer mes performances avec celles de mes camarades de classe. Cela me motive à me surpasser et à atteindre de meilleurs résultats.",
+      text: "J'apprécie particulièrement la fonctionnalité du site de gestion de notes au IST qui me permet de comparer mes performances avec celles de mes camarades de classe. Cela me motive à me surpasser et à atteindre de meilleurs résultats.",
     },
     {
       size: "w-16 h-16",
       image: "landing2.jpg",
       position: "top-[10%] transform-y-[10%] left-[30%] transform-x-[30%] ",
       name: "Jean Gray",
-      text: "Le site de gestion de notes au MIT offre une transparence totale en ce qui concerne mes évaluations. Je peux accéder instantanément à mes notes, aux commentaires des professeurs et à toutes les informations nécessaires pour évaluer ma progression académique.",
+      text: "Le site de gestion de notes au IST offre une transparence totale en ce qui concerne mes évaluations. Je peux accéder instantanément à mes notes, aux commentaires des professeurs et à toutes les informations nécessaires pour évaluer ma progression académique.",
     },
     {
       size: "w-48 h-48",
       image: "landing3.jpg",
       position: "top-[20%] -transform-y-[20%] left-[44%] -transform-x-[44%] ",
       name: "Dana Jane",
-      text: "Le site de gestion de notes au MIT simplifie le processus de suivi de mes résultats sur plusieurs semestres. Je peux facilement consulter mes relevés de notes passés, ce qui me permet de visualiser ma progression et d'identifier les domaines dans lesquels je dois m'améliorer.",
+      text: "Le site de gestion de notes au IST simplifie le processus de suivi de mes résultats sur plusieurs semestres. Je peux facilement consulter mes relevés de notes passés, ce qui me permet de visualiser ma progression et d'identifier les domaines dans lesquels je dois m'améliorer.",
     },
     {
       size: "w-16 h-16",
       image: "landing4.jpg",
       position: "top-[10%] -transform-y-[10%] left-[68%] -transform-x-[68%] ",
-      text: "Le site de gestion de notes au MIT me permet de garder une trace précise de mes performances académiques. Je peux suivre mes résultats par matière, ce qui me permet de mieux cibler mes efforts d'étude et d'identifier mes points forts et faibles.",
+      text: "Le site de gestion de notes au IST me permet de garder une trace précise de mes performances académiques. Je peux suivre mes résultats par matière, ce qui me permet de mieux cibler mes efforts d'étude et d'identifier mes points forts et faibles.",
       name: "Tanya Lane",
     },
     {
       size: "w-24 h-24",
       image: "landing5.jpg",
       position: "top-1/3 transform-y-1/3 left-[79%] -transform-x-[79%]",
-      text: "Grâce au site de gestion de notes du MIT, je peux facilement générer des rapports détaillés sur mes résultats. Cela me permet de visualiser mes performances sur une période donnée, d'analyser mes tendances et de préparer des rapports pour mes conseillers académiques ou potentiels employeurs",
+      text: "Grâce au site de gestion de notes du IST, je peux facilement générer des rapports détaillés sur mes résultats. Cela me permet de visualiser mes performances sur une période donnée, d'analyser mes tendances et de préparer des rapports pour mes conseillers académiques ou potentiels employeurs",
       name: "Hope Van Dyne",
     },
     {
@@ -334,7 +334,7 @@ function StudentSays() {
       image: "landing6.jpg",
       position: "top-[10%] transform-x-[10%] left-[90%] transform-x-[90%]",
       name: "Daniel Atlas",
-      text: `"Le site de gestion de notes au MIT offre également des fonctionnalités de rétroaction et de communication. J'apprécie pouvoir échanger directement avec mes professeurs sur les évaluations et recevoir des commentaires constructifs qui m'aident à améliorer ma compréhension et mes compétences dans chaque matière.`,
+      text: `"Le site de gestion de notes au IST offre également des fonctionnalités de rétroaction et de communication. J'apprécie pouvoir échanger directement avec mes professeurs sur les évaluations et recevoir des commentaires constructifs qui m'aident à améliorer ma compréhension et mes compétences dans chaque matière.`,
     },
   ]);
 
