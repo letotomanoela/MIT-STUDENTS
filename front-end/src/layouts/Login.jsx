@@ -150,7 +150,7 @@ const Login = () => {
             <h1 className="text-3xl font-bold mb-10 text-center ">
               Connecter vous à votre compte
             </h1>
-            <form action="" onSubIST={(e) => e.preventDefault()}>
+            <form action="" onSubmit={(e) => e.preventDefault()}>
               <div>
                 <label htmlFor="pseudo">Pseudo</label>
                 <input
